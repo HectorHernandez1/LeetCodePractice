@@ -9,6 +9,7 @@ __pycache__/
 venv/
 env/
 ENV/
+condaenv.*.requirements.txt
 
 # Testing
 .pytest_cache/

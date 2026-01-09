@@ -2,6 +2,22 @@
 
 Daily coding practice - One problem per day!
 
+## Setup
+
+### Create Conda Environment
+```bash
+# Create the environment
+conda env create -f environment.yml
+
+# Activate the environment
+conda activate leetcode
+```
+
+### Update Environment (if needed)
+```bash
+conda env update -f environment.yml --prune
+```
+
 ## Progress
 
 **Total Problems Solved:** 0

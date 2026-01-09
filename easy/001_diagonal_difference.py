@@ -41,10 +41,7 @@ def diagonalDifference(arr):
     for row in (arr):
         L_sum += row[position]
         R_sum += row[length-position]
-        if position < midpoint+1:
-            position +=1
-        else:
-            position = 0
+        position +=1
     return abs(L_sum-R_sum)
 
 
@@ -76,5 +73,20 @@ if __name__ == '__main__':
     result3 = diagonalDifference(arr3)
     print(f"Test 3: {result3}")
     assert result3 == 0, f"Expected 0, got {result3}"
+
+    # Test case 4 - 5x5 matrix
+    arr4 = [
+        [1, 0, 0, 0, 0],
+        [0, 2, 0, 0, 0],
+        [0, 0, 3, 0, 0],
+        [0, 0, 0, 4, 0],
+        [0, 0, 0, 0, 5]
+    ]
+    result4 = diagonalDifference(arr4)
+    print(f"Test 4: {result4}")
+    # Primary diagonal: 1+2+3+4+5 = 15
+    # Secondary diagonal: 0+0+3+0+0 = 3
+    # Difference: |15-3| = 12
+    assert result4 == 12, f"Expected 12, got {result4}"
 
     print("All tests passed!")

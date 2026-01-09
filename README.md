@@ -20,10 +20,10 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 0
+**Total Problems Solved:** 1
 
 ### By Difficulty
-- Easy: 0
+- Easy: 1
 - Medium: 0
 - Hard: 0
 
@@ -31,7 +31,7 @@ conda env update -f environment.yml --prune
 
 | # | Date | Problem | Difficulty | Source | Notes |
 |---|------|---------|------------|--------|-------|
-| | | | | | |
+| 1 | 2026-01-09 | Diagonal Difference | Easy | HackerRank | Calculate absolute difference between diagonal sums of a square matrix |
 
 ## Study Plan
 

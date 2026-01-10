@@ -32,7 +32,6 @@ def diagonalDifference(arr):
     Space Complexity: O(1)
     """
     length = len(arr)-1
-    midpoint = (length//2)
 
     L_sum = 0
     R_sum = 0

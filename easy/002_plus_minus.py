@@ -48,9 +48,9 @@ def plusMinus(arr):
         else:
             zeroes.append(n)
 
-    print(len(postive)/total)
-    print(len(negative)/total)
-    print(len(zeroes)/total)
+    print(f"{len(postive)/total:.6f}")
+    print(f"{len(negative)/total:.6f}")
+    print(f"{len(zeroes)/total:.6f}")
 
 
 # Test cases

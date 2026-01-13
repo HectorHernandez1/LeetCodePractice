@@ -34,8 +34,23 @@ def plusMinus(arr):
     Time Complexity: O(n)
     Space Complexity: O(1)
     """
-    # Write your code here
-    pass
+    total = len(arr)
+
+    # for negative
+    negative = []
+    postive = []
+    zeroes = []
+    for n in arr:
+        if n > 0:
+            postive.append(n)
+        elif n < 0:
+            negative.append(n)
+        else:
+            zeroes.append(n)
+
+    print(len(postive)/total)
+    print(len(negative)/total)
+    print(len(zeroes)/total)
 
 
 # Test cases

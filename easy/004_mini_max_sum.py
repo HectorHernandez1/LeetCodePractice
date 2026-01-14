@@ -40,9 +40,16 @@ def miniMaxSum(arr):
     Returns:
         None (prints the min and max sums)
     """
-    # Write your code here
-    pass
+    results = []
+    for i in range(5):
+        curSum = 0
+        for j in range(5):
+            if i != j:
+                curSum += arr[j]
+        # add the value to the main variable
+        results.append(curSum)
 
+    print(" ",min(results), max(results))
 
 # Test cases
 if __name__ == '__main__':

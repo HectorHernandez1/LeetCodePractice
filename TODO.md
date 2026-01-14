@@ -3,7 +3,7 @@
 ## Current Tasks
 
 ### In Progress
-- [ ]
+- [ ] Day 5: Time Conversion problem
 
 ### Planned for This Week
 - [ ]
@@ -40,5 +40,7 @@
 -
 
 ## Completed This Week
+- [x] Day 4: Mini-Max Sum problem
+- [x] Day 3: Staircase problem
 - [x] Day 2: Plus Minus problem
 - [x] Day 1: Diagonal Difference problem

@@ -48,8 +48,19 @@ def timeConversion(s):
     Returns:
         string: the time in 24-hour format (e.g., "19:05:45")
     """
-    # Write your code here
-    pass
+    meridiem = s[-2:]
+    time = s[:-2]
+
+    if meridiem == "AM":
+        # replace the 12 at front with 00
+        if "12" == time[:2]:
+            return "00"+time[2:]
+        return time
+    else:
+        if "12" != time[:2]:
+            return str(int(time[:2])+12)+time[2:]
+        return time
+        
 
 
 # Test cases

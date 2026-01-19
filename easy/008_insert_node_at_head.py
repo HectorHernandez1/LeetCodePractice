@@ -92,7 +92,9 @@ def insertNodeAtHead(llist, data):
     """
     # Write your code here
     node = SinglyLinkedListNode(data)
+    # New node points to old head (or None if empty) 
     node.next = llist
+    # New node is always the new head  
     return node 
 
 

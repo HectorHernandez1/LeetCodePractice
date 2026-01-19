@@ -3,7 +3,8 @@
 ## Current Tasks
 
 ### In Progress
-- [ ] Day 5: Time Conversion problem
+- [ ] Reverse Linked List problem
+- [ ] Sum to N problem
 
 ### Planned for This Week
 - [ ]
@@ -20,13 +21,12 @@
 - [ ]
 
 ## Code Improvements
-- [ ] Update progress count in README after each problem
 - [ ]
 
 ## Topics to Practice
 - [ ] Arrays
 - [ ] Strings
-- [ ] Linked Lists
+- [x] Linked Lists (in progress)
 - [ ] Trees
 - [ ] Graphs
 - [ ] Dynamic Programming
@@ -40,6 +40,9 @@
 -
 
 ## Completed This Week
+- [x] Day 7: Insert Node at Head problem
+- [x] Day 6: Insert Node at Tail problem
+- [x] Day 5: Time Conversion problem
 - [x] Day 4: Mini-Max Sum problem
 - [x] Day 3: Staircase problem
 - [x] Day 2: Plus Minus problem

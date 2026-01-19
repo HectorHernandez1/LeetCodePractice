@@ -20,10 +20,10 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 4
+**Total Problems Solved:** 7
 
 ### By Difficulty
-- Easy: 4
+- Easy: 7
 - Medium: 0
 - Hard: 0
 
@@ -35,6 +35,9 @@ conda env update -f environment.yml --prune
 | 2 | 2026-01-10 | Plus Minus | Easy | HackerRank | Calculate ratios of positive, negative, and zero elements |
 | 3 | 2026-01-11 | Staircase | Easy | HackerRank | Print a right-aligned staircase pattern using # symbols |
 | 4 | 2026-01-13 | Mini-Max Sum | Easy | HackerRank | Find min and max sums of 4 out of 5 integers |
+| 5 | 2026-01-14 | Time Conversion | Easy | HackerRank | Convert 12-hour AM/PM format to 24-hour military time |
+| 6 | 2026-01-16 | Insert Node at Tail | Easy | HackerRank | Insert a new node at the tail of a linked list |
+| 7 | 2026-01-19 | Insert Node at Head | Easy | HackerRank | Insert a new node at the head of a linked list |
 
 ## Study Plan
 

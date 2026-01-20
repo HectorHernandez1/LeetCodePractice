@@ -65,8 +65,38 @@ def sum_to_n(nums, n):
     Returns:
         List[List[int]]: all combinations that sum to n
     """
-    # Write your code here
-    pass
+    results = []
+
+    # needs access to nums and 
+    def backtrack(start, current_combo, remaining):
+        # base case -
+        # SUCCESS: we hit exactly the target
+        if remaining == 0:
+            results.append(current_combo.copy())
+            return
+        # FAILURE: overshot or no more numbers
+        if remaining < 0:
+            return
+
+        for i in range(start, len(nums)):
+            # choose: add this number
+            current_combo.append(nums[i])
+
+            #explore: recurse ()
+            backtrack(i+1,current_combo,remaining-nums[i])
+
+            #unchoose: remove it (backtrack)
+            current_combo.pop()
+
+    # start at index 0, empty combo, full target
+    backtrack(0, [], n)
+
+    return results
+
+
+
+        
+
 
 
 # Test cases

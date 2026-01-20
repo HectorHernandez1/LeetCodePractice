@@ -20,11 +20,11 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 7
+**Total Problems Solved:** 8
 
 ### By Difficulty
 - Easy: 7
-- Medium: 0
+- Medium: 1
 - Hard: 0
 
 ## Problems Log
@@ -38,6 +38,7 @@ conda env update -f environment.yml --prune
 | 5 | 2026-01-14 | Time Conversion | Easy | HackerRank | Convert 12-hour AM/PM format to 24-hour military time |
 | 6 | 2026-01-16 | Insert Node at Tail | Easy | HackerRank | Insert a new node at the tail of a linked list |
 | 7 | 2026-01-19 | Insert Node at Head | Easy | HackerRank | Insert a new node at the head of a linked list |
+| 8 | 2026-01-19 | Sum to N | Medium | Classic | Find all combinations that sum to target using backtracking |
 
 ## Study Plan
 

@@ -20,11 +20,11 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 12
+**Total Problems Solved:** 10
 
 ### By Difficulty
-- Easy: 10
-- Medium: 2
+- Easy: 9
+- Medium: 1
 - Hard: 0
 
 ## Problems Log
@@ -40,9 +40,7 @@ conda env update -f environment.yml --prune
 | 7 | 2026-01-16 | Reverse Linked List | Easy | HackerRank/LeetCode #206 | Reverse a linked list using recursion or iteration |
 | 8 | 2026-01-19 | Insert Node at Head | Easy | HackerRank | Insert a new node at the head of a linked list |
 | 9 | 2026-01-19 | Sum to N | Medium | Classic | Find all combinations that sum to target using backtracking |
-| 10 | 2026-01-20 | Grading Students | Easy | HackerRank | Round grades to nearest 5 based on rounding rules |
-| 11 | 2026-01-20 | Add Two Numbers | Medium | LeetCode #2 | Add two numbers represented as reversed linked lists |
-| 12 | 2026-01-20 | Two Sum | Easy | LeetCode #1 | Find two numbers in array that add up to target |
+| 10 | 2026-01-21 | Grading Students | Easy | HackerRank | Round grades to nearest 5 based on rounding rules |
 
 ## Study Plan
 

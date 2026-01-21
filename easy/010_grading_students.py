@@ -80,8 +80,23 @@ def gradingStudents(grades):
     Returns:
         list[int]: the grades after applying rounding rules
     """
-    # Write your code here
-    pass
+    finalGrades = []
+    for grade in grades:
+        # failing grade
+        if grade < 38:
+            finalGrades.append(grade)
+        elif grade % 5 == 0:
+            finalGrades.append(grade)
+        else:
+            nextGrade = (grade//5+1)*5 
+            # if delta is less than 3 of the 
+            if nextGrade - grade < 3:
+               finalGrades.append(nextGrade)
+            else:
+                finalGrades.append(grade)
+
+    return finalGrades
+
 
 
 # Test cases

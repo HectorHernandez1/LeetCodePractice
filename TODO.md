@@ -3,11 +3,11 @@
 ## Current Tasks
 
 ### In Progress
-- [ ] Reverse Linked List problem
-- [ ] Grading Students problem
+- [ ] Complete Reverse Linked List implementation
 
 ### Planned for This Week
-- [ ]
+- [ ] Add Two Numbers problem
+- [ ] Two Sum problem
 
 ## Problem Queue
 
@@ -31,16 +31,20 @@
 - [ ] Graphs
 - [ ] Dynamic Programming
 - [ ] Sorting & Searching
-- [ ] Hash Tables
+- [x] Hash Tables (in progress)
 - [ ] Stack & Queue
-- [x] Recursion/Backtracking (in progress)
+- [x] Recursion/Backtracking
 - [ ] Bit Manipulation
 
 ## Notes & Ideas
 -
 
 ## Completed This Week
-- [x] Day 8: Sum to N problem (Medium - Backtracking)
+- [x] Day 12: Two Sum problem (Easy - Hash Table)
+- [x] Day 11: Add Two Numbers problem (Medium - Linked List)
+- [x] Day 10: Grading Students problem (Easy)
+- [x] Day 9: Sum to N problem (Medium - Backtracking)
+- [x] Day 8: Reverse Linked List problem (Easy)
 - [x] Day 7: Insert Node at Head problem
 - [x] Day 6: Insert Node at Tail problem
 - [x] Day 5: Time Conversion problem

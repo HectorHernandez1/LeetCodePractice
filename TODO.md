@@ -33,11 +33,16 @@
 ## Data Engineering & Data Science Problems
 These are practical data problems focused on data manipulation and analysis:
 - [ ] **Data Cleaning & Aggregation** - Clean sensor data and calculate averages
+  - File: `datascience/001_data_cleaning_aggregation.py`
 - [ ] **Grouping & Aggregation** - Find top customers by spending
+  - File: `datascience/002_grouping_aggregation.py`
 - [ ] **Time Series Analysis** - Find consecutive temperature increases
+  - File: `datascience/003_time_series_analysis.py`
 - [ ] **Moving Average** - Calculate moving averages with sliding window
+  - File: `datascience/004_moving_average.py`
 - [ ] **Data Deduplication** - Remove duplicate records keeping latest
+  - File: `datascience/005_data_deduplication.py`
 - [ ] **Pivot Table Implementation** - Build pivot table from scratch
+  - File: `datascience/006_pivot_table.py`
 - [ ] **ETL Pipeline** - Extract, transform, load data pipeline
-
-All problems in: `datascience/data_engineering_problems.py`
+  - File: `datascience/007_etl_pipeline.py`

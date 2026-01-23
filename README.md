@@ -54,15 +54,15 @@ Currently focusing on: **Easy Problems**
 
 ### Data Engineering & Data Science Problems
 A collection of 7 practical data problems focused on real-world data manipulation tasks:
-- Data cleaning & aggregation
-- Grouping & aggregation
-- Time series analysis
-- Moving averages
-- Data deduplication
-- Pivot table implementation
-- ETL pipelines
+- Data cleaning & aggregation (001)
+- Grouping & aggregation (002)
+- Time series analysis (003)
+- Moving averages (004)
+- Data deduplication (005)
+- Pivot table implementation (006)
+- ETL pipelines (007)
 
-See: `datascience/data_engineering_problems.py`
+Each problem has its own file with tests. See: `datascience/` folder or `datascience/README.md`
 
 ## Notes & Tips
 

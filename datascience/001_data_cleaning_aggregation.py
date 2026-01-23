@@ -45,7 +45,19 @@ def clean_and_aggregate_sensors(sensor_data):
         Dict mapping sensor_id (int) to average temperature (float)
     """
     # TODO: Implement your solution here
-    pass
+    final_data = {}
+    for data in sensor_data:
+        if data["temperature"] is not None:
+            if data["sensor_id"] not in final_data:
+                final_data[data["sensor_id"]] = [data["temperature"]]
+            else:
+                final_data[data["sensor_id"]].append(data["temperature"])
+
+    for k,v in final_data.items():
+        final_data[k] = sum(v)/len(v)
+    return final_data
+
+
 
 
 # Test cases

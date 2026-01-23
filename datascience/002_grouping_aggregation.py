@@ -46,8 +46,20 @@ def top_customers_by_spending(transactions, top_n=3):
         List of tuples [(customer_id, total_spending)] for top N customers,
         sorted by spending descending
     """
-    # TODO: Implement your solution here
-    pass
+    temp = {}
+    for row in transactions:
+        if row["customer_id"] not in temp:
+            temp[row["customer_id"] ] = row["amount"] 
+        else:
+            temp[row["customer_id"]] += row["amount"] 
+    # add as tuples
+    final_list = []
+    for k,v in temp.items():
+        final_list.append((k,v))
+
+    # sort
+    return sorted(final_list, key=lambda x: x[1], reverse=True)[:top_n]
+
 
 
 # Test cases

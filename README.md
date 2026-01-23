@@ -27,6 +27,8 @@ conda env update -f environment.yml --prune
 - Medium: 1
 - Hard: 0
 
+**In Progress:** 1 (Medium)
+
 ## Problems Log
 
 | # | Date | Problem | Difficulty | Source | Notes |
@@ -42,10 +44,25 @@ conda env update -f environment.yml --prune
 | 9 | 2026-01-19 | Sum to N | Medium | Classic | Find all combinations that sum to target using backtracking |
 | 10 | 2026-01-21 | Grading Students | Easy | HackerRank | Round grades to nearest 5 based on rounding rules |
 | 11 | 2026-01-23 | Two Sum | Easy | LeetCode #1 | Find two numbers that add up to target using nested loops |
+| 12 | 2026-01-20 | Add Two Numbers (In Progress) | Medium | LeetCode #2 | Add two numbers represented as linked lists in reverse order |
 
 ## Study Plan
 
 Currently focusing on: **Easy Problems**
+
+## Additional Practice
+
+### Data Engineering & Data Science Problems
+A collection of 7 practical data problems focused on real-world data manipulation tasks:
+- Data cleaning & aggregation
+- Grouping & aggregation
+- Time series analysis
+- Moving averages
+- Data deduplication
+- Pivot table implementation
+- ETL pipelines
+
+See: `datascience/data_engineering_problems.py`
 
 ## Notes & Tips
 

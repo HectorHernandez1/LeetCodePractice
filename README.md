@@ -20,14 +20,17 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 11
+**Total Problems Solved:** 13
 
-### By Difficulty
+### Algorithm Problems
 - Easy: 10
 - Medium: 1
 - Hard: 0
 
-**In Progress:** 1 (Medium)
+**In Progress:** 1 (Medium - Add Two Numbers)
+
+### Data Science Problems
+- Completed: 2/7
 
 ## Problems Log
 
@@ -54,13 +57,15 @@ Currently focusing on: **Easy Problems**
 
 ### Data Engineering & Data Science Problems
 A collection of 7 practical data problems focused on real-world data manipulation tasks:
-- Data cleaning & aggregation (001)
-- Grouping & aggregation (002)
+- Data cleaning & aggregation (001) ✓
+- Grouping & aggregation (002) ✓
 - Time series analysis (003)
 - Moving averages (004)
 - Data deduplication (005)
 - Pivot table implementation (006)
 - ETL pipelines (007)
+
+**Progress:** 2/7 completed
 
 Each problem has its own file with tests. See: `datascience/` folder or `datascience/README.md`
 

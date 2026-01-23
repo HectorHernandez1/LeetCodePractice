@@ -20,10 +20,10 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 10
+**Total Problems Solved:** 11
 
 ### By Difficulty
-- Easy: 9
+- Easy: 10
 - Medium: 1
 - Hard: 0
 
@@ -41,6 +41,7 @@ conda env update -f environment.yml --prune
 | 8 | 2026-01-19 | Insert Node at Head | Easy | HackerRank | Insert a new node at the head of a linked list |
 | 9 | 2026-01-19 | Sum to N | Medium | Classic | Find all combinations that sum to target using backtracking |
 | 10 | 2026-01-21 | Grading Students | Easy | HackerRank | Round grades to nearest 5 based on rounding rules |
+| 11 | 2026-01-23 | Two Sum | Easy | LeetCode #1 | Find two numbers that add up to target using nested loops |
 
 ## Study Plan
 

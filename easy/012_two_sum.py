@@ -63,8 +63,19 @@ class Solution:
         Returns:
             List of two indices where nums[i] + nums[j] == target
         """
-        # Write your code here
-        pass
+        total =  len(nums) 
+        #print("total",total)
+        #print("len(nums)", len(nums))
+        for i in range(total):    
+            for j in range(i+1,total):
+                #print("i -",i)
+                #print("j - ",j)
+                if target == (nums[i]+nums[j]):
+                    return [i,j]
+
+
+
+        
 
 
 # Test cases

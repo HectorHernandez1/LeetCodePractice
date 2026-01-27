@@ -1,7 +1,11 @@
 # TODO - Problems to Solve
 
+## Hard Problems
+- [ ] **Trapping Rain Water** (LeetCode #42, Hard) - Calculate trapped water between bars using two-pointer technique.
+  - File: `hard/001_trapping_rain_water.py`
+
 ## Stack-based Problems
-- [ ] **Valid Parentheses** (LeetCode #20, Easy) - Check if brackets are balanced. Great intro to stacks.
+- [x] **Valid Parentheses** (LeetCode #20, Easy) - Check if brackets are balanced. Great intro to stacks.
   - File: `easy/013_valid_parentheses.py`
 
 ## Two-pointer Technique

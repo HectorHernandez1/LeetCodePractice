@@ -20,12 +20,12 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 13
+**Total Problems Solved:** 14
 
 ### Algorithm Problems
-- Easy: 10
+- Easy: 11
 - Medium: 1
-- Hard: 0
+- Hard: 0 (1 added to solve)
 
 **In Progress:** 1 (Medium - Add Two Numbers)
 
@@ -48,6 +48,7 @@ conda env update -f environment.yml --prune
 | 10 | 2026-01-21 | Grading Students | Easy | HackerRank | Round grades to nearest 5 based on rounding rules |
 | 11 | 2026-01-23 | Two Sum | Easy | LeetCode #1 | Find two numbers that add up to target using nested loops |
 | 12 | 2026-01-20 | Add Two Numbers (In Progress) | Medium | LeetCode #2 | Add two numbers represented as linked lists in reverse order |
+| 13 | 2026-01-27 | Valid Parentheses | Easy | LeetCode #20 | Check if brackets are balanced using stack |
 
 ## Study Plan
 

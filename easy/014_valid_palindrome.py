@@ -54,8 +54,23 @@ class Solution:
         Returns:
             bool: True if palindrome, False otherwise
         """
-        # Write your code here
-        pass
+        #clean up the words
+
+        clean_s = []
+        for i in list(s):
+            c = i.lower()
+            if c.isalpha():
+                clean_s.append(c)
+        print(clean_s)
+        
+        total = len(clean_s) - 1
+        print("total",total)
+        if clean_s:
+            for i in range(total):
+                if clean_s[i] != clean_s[total-i]:
+                    return False
+
+        return True
 
 
 # Test cases

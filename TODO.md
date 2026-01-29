@@ -36,9 +36,9 @@
 
 ## Data Engineering & Data Science Problems
 These are practical data problems focused on data manipulation and analysis:
-- [ ] **Data Cleaning & Aggregation** - Clean sensor data and calculate averages
+- [x] **Data Cleaning & Aggregation** - Clean sensor data and calculate averages
   - File: `datascience/001_data_cleaning_aggregation.py`
-- [ ] **Grouping & Aggregation** - Find top customers by spending
+- [x] **Grouping & Aggregation** - Find top customers by spending
   - File: `datascience/002_grouping_aggregation.py`
 - [ ] **Time Series Analysis** - Find consecutive temperature increases
   - File: `datascience/003_time_series_analysis.py`

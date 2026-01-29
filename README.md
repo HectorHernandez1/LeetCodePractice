@@ -20,10 +20,10 @@ conda env update -f environment.yml --prune
 
 ## Progress
 
-**Total Problems Solved:** 14
+**Total Problems Solved:** 15
 
 ### Algorithm Problems
-- Easy: 11
+- Easy: 12
 - Medium: 1
 - Hard: 0 (1 added to solve)
 
@@ -49,6 +49,7 @@ conda env update -f environment.yml --prune
 | 11 | 2026-01-23 | Two Sum | Easy | LeetCode #1 | Find two numbers that add up to target using nested loops |
 | 12 | 2026-01-20 | Add Two Numbers (In Progress) | Medium | LeetCode #2 | Add two numbers represented as linked lists in reverse order |
 | 13 | 2026-01-27 | Valid Parentheses | Easy | LeetCode #20 | Check if brackets are balanced using stack |
+| 14 | 2026-01-29 | Valid Palindrome | Easy | LeetCode #125 | Check if string is palindrome using two-pointer technique |
 
 ## Study Plan
 

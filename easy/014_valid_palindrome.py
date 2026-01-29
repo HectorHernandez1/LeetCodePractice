@@ -59,16 +59,17 @@ class Solution:
         clean_s = []
         for i in list(s):
             c = i.lower()
-            if c.isalpha():
+            if c.isalnum():
                 clean_s.append(c)
-        print(clean_s)
-        
-        total = len(clean_s) - 1
-        print("total",total)
+        #print(clean_s)
+        l = 0
+        r = len(clean_s) - 1
         if clean_s:
-            for i in range(total):
-                if clean_s[i] != clean_s[total-i]:
+            while l < r:
+                if clean_s[l] != clean_s[r]:
                     return False
+                l +=1
+                r -=1
 
         return True
 

@@ -11,7 +11,7 @@
 ## Two-pointer Technique
 - [x] **Valid Palindrome** (LeetCode #125, Easy) - Check if a string is a palindrome ignoring non-alphanumeric characters.
   - File: `easy/014_valid_palindrome.py`
-- [ ] **Merge Sorted Array** (LeetCode #88, Easy) - Merge two sorted arrays in-place.
+- [x] **Merge Sorted Array** (LeetCode #88, Easy) - Merge two sorted arrays in-place using backward two-pointer technique.
   - Files: `easy/015_merge_sorted_array.py` | `easy/015_merge_sorted_array.ts` ✨
 
 ## Linked Lists

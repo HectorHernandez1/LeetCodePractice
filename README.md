@@ -28,7 +28,7 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 
 ## Progress
 
-**Total Problems Solved:** 15
+**Total Problems Solved:** 16
 **TypeScript Versions:** 2 (in progress)
 
 ### Algorithm Problems
@@ -63,6 +63,7 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 | 12 | 2026-01-20 | Add Two Numbers (In Progress) | Medium | LeetCode #2 | Add two numbers represented as linked lists in reverse order |
 | 13 | 2026-01-27 | Valid Parentheses | Easy | LeetCode #20 | Check if brackets are balanced using stack |
 | 14 | 2026-01-29 | Valid Palindrome | Easy | LeetCode #125 | Check if string is palindrome using two-pointer technique |
+| 15 | 2026-02-02 | Merge Sorted Array | Easy | LeetCode #88 | Merge two sorted arrays in-place using backward two-pointer technique |
 
 ## Study Plan
 

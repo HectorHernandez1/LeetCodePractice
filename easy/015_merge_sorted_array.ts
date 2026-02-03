@@ -70,6 +70,34 @@ class Solution {
          *     void: Modifies nums1 in-place
          */
         // Write your code here
+        //base case
+        if (nums2.length == 0){
+            return;
+        } 
+
+    //set up the pointers
+    let end1 = m+n-1;
+    let end2 = n-1;
+    let curr_pointer = m-1;
+
+    //check the smallest number
+    while( curr_pointer >= 0  && end2 >=0){
+        if (nums1[curr_pointer] < nums2[end2]){
+            nums1[end1] = nums2[end2];
+            --end2;
+        }else{
+            nums1[end1] = nums1[curr_pointer]
+            --curr_pointer;
+        }
+         --end1;
+    }
+
+    while(end2 >=0 ){
+        nums1[end1] = nums2[end2];
+        --end1;
+        --end2;
+    }
+
     }
 }
 

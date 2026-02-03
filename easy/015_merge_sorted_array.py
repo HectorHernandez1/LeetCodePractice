@@ -74,8 +74,14 @@ class Solution:
             None: Modifies nums1 in-place
         """
         # Write your code here
-        pass
-
+        #base case
+        if not nums2:
+            return
+        j = 0
+        for i in range(m,m+n):
+            nums1[i]=nums2[j]
+            j+=1
+        nums1.sort()
 
 # Test cases
 if __name__ == '__main__':

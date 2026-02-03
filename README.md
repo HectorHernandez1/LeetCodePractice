@@ -4,7 +4,7 @@ Daily coding practice - One problem per day!
 
 ## Setup
 
-### Create Conda Environment
+### Python Environment
 ```bash
 # Create the environment
 conda env create -f environment.yml
@@ -18,9 +18,18 @@ conda activate leetcode
 conda env update -f environment.yml --prune
 ```
 
+### Running TypeScript Solutions
+TypeScript solutions can be run using Bun:
+```bash
+# Run a specific TypeScript problem
+bun easy/015_merge_sorted_array.ts
+bun easy/020_best_time_to_buy_and_sell_stock.ts
+```
+
 ## Progress
 
 **Total Problems Solved:** 15
+**TypeScript Versions:** 2 (in progress)
 
 ### Algorithm Problems
 - Easy: 12
@@ -28,6 +37,10 @@ conda env update -f environment.yml --prune
 - Hard: 0 (1 added to solve)
 
 **In Progress:** 1 (Medium - Add Two Numbers)
+
+### Multi-Language Support
+- Python: All problems
+- TypeScript: Select problems (015 Merge Sorted Array, 020 Best Time to Buy and Sell Stock)
 
 ### Data Science Problems
 - Completed: 2/7

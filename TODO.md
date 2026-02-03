@@ -12,7 +12,7 @@
 - [x] **Valid Palindrome** (LeetCode #125, Easy) - Check if a string is a palindrome ignoring non-alphanumeric characters.
   - File: `easy/014_valid_palindrome.py`
 - [ ] **Merge Sorted Array** (LeetCode #88, Easy) - Merge two sorted arrays in-place.
-  - File: `easy/015_merge_sorted_array.py`
+  - Files: `easy/015_merge_sorted_array.py` | `easy/015_merge_sorted_array.ts` ✨
 
 ## Linked Lists
 - [ ] **Merge Two Sorted Lists** (LeetCode #21, Easy) - Merge two sorted linked lists.
@@ -28,7 +28,7 @@
 - [ ] **Contains Duplicate** (LeetCode #217, Easy) - Find if array has duplicates.
   - File: `easy/019_contains_duplicate.py`
 - [ ] **Best Time to Buy and Sell Stock** (LeetCode #121, Easy) - Find max profit from stock prices.
-  - File: `easy/020_best_time_to_buy_and_sell_stock.py`
+  - Files: `easy/020_best_time_to_buy_and_sell_stock.py` | `easy/020_best_time_to_buy_and_sell_stock.ts` ✨
 
 ## In Progress
 - [ ] **Add Two Numbers** (LeetCode #2, Medium) - Add two numbers represented as linked lists in reverse order.

@@ -63,8 +63,35 @@ class Solution:
             ListNode: Head of merged sorted linked list
         """
         # Write your code here
-        pass
+        #base case
+        if list1 is None and list2 is None:
+            return None
+        elif list1 is None and list2 is not None:
+            return list2
+        elif list1 is not None and list2 is None:
+            return list1
+        
+        # now merge
+        pt1 = list1
+        pt2 = list2
+        head = ListNode()
 
+        while pt1 is not None and pt2 is not None:
+            if pt1.val < pt2.val:
+                head.next = pt1
+                head = head.next
+                pt1 = pt1.next
+            else:
+                head.next = pt2
+                head = head.next
+                pt2 = pt2.next
+
+        if pt1 is not None:
+            head.next = pt1
+        else:
+            head.next = pt2
+            
+        return head.next
 
 # Helper functions for testing
 def create_linked_list(arr):

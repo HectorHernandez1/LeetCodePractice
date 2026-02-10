@@ -17,7 +17,7 @@
 ## Linked Lists
 - [x] **Merge Two Sorted Lists** (LeetCode #21, Easy) - Merge two sorted linked lists.
   - File: `easy/016_merge_two_sorted_lists.py`
-- [ ] **Linked List Cycle** (LeetCode #141, Easy) - Detect if a cycle exists (Floyd's algorithm).
+- [x] **Linked List Cycle** (LeetCode #141, Easy) - Detect if a cycle exists (Floyd's algorithm).
   - File: `easy/017_linked_list_cycle.py`
 
 ## Binary Search

@@ -28,11 +28,11 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 
 ## Progress
 
-**Total Problems Solved:** 17
+**Total Problems Solved:** 18
 **TypeScript Versions:** 2 (in progress)
 
 ### Algorithm Problems
-- Easy: 12
+- Easy: 13
 - Medium: 1
 - Hard: 0 (1 added to solve)
 
@@ -65,6 +65,7 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 | 14 | 2026-01-29 | Valid Palindrome | Easy | LeetCode #125 | Check if string is palindrome using two-pointer technique |
 | 15 | 2026-02-02 | Merge Sorted Array | Easy | LeetCode #88 | Merge two sorted arrays in-place using backward two-pointer technique |
 | 16 | 2026-02-09 | Merge Two Sorted Lists | Easy | LeetCode #21 | Merge two sorted linked lists using dummy node and two-pointer technique |
+| 17 | 2026-02-10 | Linked List Cycle | Easy | LeetCode #141 | Detect cycle in linked list using Floyd's two-pointer algorithm (O(1) space) |
 
 ## Study Plan
 

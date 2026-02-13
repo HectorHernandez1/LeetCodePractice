@@ -21,7 +21,7 @@
   - File: `easy/017_linked_list_cycle.py`
 
 ## Binary Search
-- [ ] **Binary Search** (LeetCode #704, Easy) - Classic binary search implementation.
+- [x] **Binary Search** (LeetCode #704, Easy) - Classic binary search implementation.
   - File: `easy/018_binary_search.py`
 
 ## Array/Hash Set

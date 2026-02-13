@@ -28,15 +28,15 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 
 ## Progress
 
-**Total Problems Solved:** 19
+**Total Problems Solved:** 21
 **TypeScript Versions:** 2 (in progress)
 
 ### Algorithm Problems
-- Easy: 14
-- Medium: 2
+- Easy: 15
+- Medium: 3
 - Hard: 0 (1 added to solve)
 
-**In Progress:** 1 (Medium - Maximum Subarray)
+**In Progress:** 0
 
 ### Multi-Language Support
 - Python: All problems
@@ -67,7 +67,8 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 | 16 | 2026-02-09 | Merge Two Sorted Lists | Easy | LeetCode #21 | Merge two sorted linked lists using dummy node and two-pointer technique |
 | 17 | 2026-02-10 | Linked List Cycle | Easy | LeetCode #141 | Detect cycle in linked list using Floyd's two-pointer algorithm (O(1) space) |
 | 18 | 2026-02-11 | Binary Search | Easy | LeetCode #704 | Search sorted array using binary search with O(log n) complexity |
-| 19 | TBD | Maximum Subarray | Medium | LeetCode #53 | Find contiguous subarray with largest sum using divide and conquer |
+| 19 | 2026-02-13 | Maximum Subarray (Divide & Conquer) | Medium | LeetCode #53 | Find contiguous subarray with largest sum using divide and conquer |
+| 20 | 2026-02-13 | Reverse String | Easy | LeetCode #344 | Reverse string in-place using two-pointer technique |
 
 ## Study Plan
 

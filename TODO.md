@@ -30,6 +30,16 @@
 - [ ] **Best Time to Buy and Sell Stock** (LeetCode #121, Easy) - Find max profit from stock prices.
   - Files: `easy/020_best_time_to_buy_and_sell_stock.py` | `easy/020_best_time_to_buy_and_sell_stock.ts` ✨
 
+## String
+- [x] **Reverse String** (LeetCode #344, Easy) - Reverse string in-place using two-pointer technique.
+  - File: `easy/021_reverse_string.py`
+- [ ] **First Non-Repeating Character** (LeetCode #387, Easy) - Find the first character that doesn't repeat.
+  - File: `easy/022_first_non_repeating_character.py`
+
+## Math/Number Theory
+- [ ] **Count Primes in Range** (Classic, Medium) - Count prime numbers between two integers.
+  - Files: `medium/004_count_primes_in_range.py` | `medium/004_count_primes_in_range.js` ✨ | `medium/004_count_primes_in_range.cs` ✨
+
 ## In Progress
 - [ ] **Add Two Numbers** (LeetCode #2, Medium) - Add two numbers represented as linked lists in reverse order.
   - File: `medium/011_add_two_numbers.py`

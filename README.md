@@ -28,12 +28,12 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 
 ## Progress
 
-**Total Problems Solved:** 21
+**Total Problems Solved:** 23
 **TypeScript Versions:** 2 (in progress)
 
 ### Algorithm Problems
-- Easy: 15
-- Medium: 3
+- Easy: 16
+- Medium: 4
 - Hard: 0 (1 added to solve)
 
 **In Progress:** 0
@@ -41,6 +41,8 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 ### Multi-Language Support
 - Python: All problems
 - TypeScript: Select problems (015 Merge Sorted Array, 020 Best Time to Buy and Sell Stock)
+- JavaScript: Select problems (004 Count Primes in Range)
+- C#: Select problems (004 Count Primes in Range)
 
 ### Data Science Problems
 - Completed: 2/7
@@ -69,6 +71,8 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 | 18 | 2026-02-11 | Binary Search | Easy | LeetCode #704 | Search sorted array using binary search with O(log n) complexity |
 | 19 | 2026-02-13 | Maximum Subarray (Divide & Conquer) | Medium | LeetCode #53 | Find contiguous subarray with largest sum using divide and conquer |
 | 20 | 2026-02-13 | Reverse String | Easy | LeetCode #344 | Reverse string in-place using two-pointer technique |
+| 21 | 2026-02-13 | First Non-Repeating Character | Easy | LeetCode #387 | Find the first character that does not repeat in a list |
+| 22 | 2026-02-13 | Count Primes in Range | Medium | Classic | Count prime numbers between two integers (Python, JS, C#) |
 
 ## Study Plan
 

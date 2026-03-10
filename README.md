@@ -28,11 +28,11 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 
 ## Progress
 
-**Total Problems Solved:** 23
+**Total Problems Solved:** 24
 **TypeScript Versions:** 2 (in progress)
 
 ### Algorithm Problems
-- Easy: 16
+- Easy: 17
 - Medium: 4
 - Hard: 0 (1 added to solve)
 
@@ -73,6 +73,7 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 | 20 | 2026-02-13 | Reverse String | Easy | LeetCode #344 | Reverse string in-place using two-pointer technique |
 | 21 | 2026-02-13 | First Non-Repeating Character | Easy | LeetCode #387 | Find the first character that does not repeat in a list |
 | 22 | 2026-02-13 | Count Primes in Range | Medium | Classic | Count prime numbers between two integers (Python, JS, C#) |
+| 23 | 2026-03-09 | Contains Duplicate | Easy | LeetCode #217 | Check for duplicates using hash set (O(n) time, O(n) space) |
 
 ## Study Plan
 

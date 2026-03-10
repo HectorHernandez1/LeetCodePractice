@@ -25,7 +25,7 @@
   - File: `easy/018_binary_search.py`
 
 ## Array/Hash Set
-- [ ] **Contains Duplicate** (LeetCode #217, Easy) - Find if array has duplicates.
+- [x] **Contains Duplicate** (LeetCode #217, Easy) - Find if array has duplicates.
   - File: `easy/019_contains_duplicate.py`
 - [ ] **Best Time to Buy and Sell Stock** (LeetCode #121, Easy) - Find max profit from stock prices.
   - Files: `easy/020_best_time_to_buy_and_sell_stock.py` | `easy/020_best_time_to_buy_and_sell_stock.ts` ✨

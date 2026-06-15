@@ -74,27 +74,7 @@ class Solution:
             None: Modifies nums1 in-place
         """
         # Write your code here
-        #base case
-        if not nums2:
-            return
-        end1 = m+n-1
-        data1 = m-1
-        end2 = n-1
-
-        while end2 >= 0 and data1 >=0:
-            if nums1[data1] < nums2[end2]:
-                nums1[end1] = nums2[end2]
-                end2 -=1
-            else:
-                nums1[end1] = nums1[data1]
-                data1 -=1
-            end1 -=1
-
-        # Copy remaining nums2 elements if any
-        while end2 >= 0:
-            nums1[end1] = nums2[end2]
-            end2 -= 1
-            end1 -= 1
+        pass
 
 
 # Test cases

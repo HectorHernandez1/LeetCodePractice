@@ -47,12 +47,7 @@ class Solution:
             None: Modifies s in-place
         """
         # Write your code here
-        left = 0
-        right = len(s)-1
-        while left < right:
-            s[left], s[right] = s[right], s[left]
-            left +=1
-            right -=1
+        pass
 
 
 # Test cases

@@ -66,64 +66,7 @@ class Solution:
         Returns:
             int: Maximum subarray sum
         """
-        def divideConquer(left: int, right: int) -> int:
-            """
-            Recursively find max subarray sum in range [left, right].
-
-            Args:
-                left: Left boundary index
-                right: Right boundary index
-
-            Returns:
-                int: Maximum subarray sum in this range
-            """
-            # Base case: only one element
-            if left == right:
-                return nums[left]
-
-            # Find the middle point
-            mid = (left + right) // 2
-
-            # Recursively find max in left and right halves
-            left_max = divideConquer(left, mid)
-            right_max = divideConquer(mid + 1, right)
-
-            # Find max crossing subarray
-            cross_max = maxCrossingSum(left, mid, right)
-
-            # Return the maximum of all three
-            return max(left_max, right_max, cross_max)
-
-        def maxCrossingSum(left: int, mid: int, right: int) -> int:
-            """
-            Find maximum sum of subarray that crosses the midpoint.
-
-            Args:
-                left: Left boundary index
-                mid: Middle index
-                right: Right boundary index
-
-            Returns:
-                int: Maximum crossing subarray sum
-            """
-            # Find max sum starting from mid and going left
-            left_sum = float('-inf')
-            curr_sum = 0
-            for i in range(mid, left - 1, -1):  # Go backwards from mid
-                curr_sum += nums[i]
-                left_sum = max(left_sum, curr_sum)
-
-            # Find max sum starting from mid+1 and going right
-            right_sum = float('-inf')
-            curr_sum = 0
-            for i in range(mid + 1, right + 1):  # Go forwards from mid+1
-                curr_sum += nums[i]
-                right_sum = max(right_sum, curr_sum)
-
-            # The crossing max is both sides combined
-            return left_sum + right_sum
-
-        return divideConquer(0, len(nums) - 1)
+        pass
 
 
 # Test cases

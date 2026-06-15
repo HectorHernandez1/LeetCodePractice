@@ -60,24 +60,7 @@ class Solution:
         Returns:
             bool: True if valid, False otherwise
         """
-        grounded_truth = {")": "(", "}": "{", "]": "["}
-        right_brackets = ")}]"
-        stack = []
-        for i in list(s):
-            if i not in right_brackets:
-                stack.append(i)
-            else:
-                if len(stack) == 0:
-                    return False
-                left_bracket = stack.pop()
-                expected = grounded_truth[i]
-                if left_bracket != expected:
-                    return False
-        if len(stack)==0:
-            return True
-        else:
-            return False
-
+        pass
 
 
 # Test cases

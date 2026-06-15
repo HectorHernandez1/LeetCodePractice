@@ -31,18 +31,7 @@ def diagonalDifference(arr):
     Time Complexity: O(n) where n is the dimension of the matrix
     Space Complexity: O(1)
     """
-    length = len(arr)-1
-
-    L_sum = 0
-    R_sum = 0
-    position = 0
-
-    for row in (arr):
-        L_sum += row[position]
-        R_sum += row[length-position]
-        position +=1
-    return abs(L_sum-R_sum)
-
+    pass
 
 
 # Test cases

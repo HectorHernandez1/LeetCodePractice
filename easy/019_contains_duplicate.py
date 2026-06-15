@@ -50,14 +50,7 @@ class Solution:
             bool: True if duplicates exist, False otherwise
         """
         # Write your code here
-        final_checker = set()
-
-        for n in nums:
-            if n in final_checker:
-                return True
-            else:
-                final_checker.add(n)
-        return False
+        pass
 
 # Test cases
 if __name__ == '__main__':

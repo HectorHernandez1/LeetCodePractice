@@ -68,20 +68,7 @@ class Solution:
             bool: True if cycle exists, False otherwise
         """
         # Write your code here
-        if head is None or head.next is None:
-            return False
-        pt1 = head
-        pt2 = head.next.next
-
-        while pt2 is not None and pt2.next is not None:
-            pt2 = pt2.next.next
-            if pt1 == pt2:
-                return True
-            else:
-                pt1 = pt1.next
-
-                
-        return False
+        pass
 
 
 # Helper functions for testing

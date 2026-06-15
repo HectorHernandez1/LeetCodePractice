@@ -54,29 +54,7 @@ class Solution:
         Returns:
             int: Index of target if found, -1 otherwise
         """
-        # Set up two pointers
-        left = 0
-        right = len(nums) - 1
-
-        # Keep searching while there's space between left and right
-        while left <= right:
-          # Find the middle
-          mid = (left + right) // 2
-
-          # Check if we found the target
-          if nums[mid] == target:
-              return mid
-
-          # If target is bigger, search the right half
-          elif nums[mid] < target:
-              left = mid + 1  # Move left pointer right
-
-          # If target is smaller, search the left half
-          else:
-              right = mid - 1  # Move right pointer left
-
-        # If we exit the loop, target wasn't found
-        return -1
+        pass
 
 
 # Test cases

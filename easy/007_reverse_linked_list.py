@@ -94,36 +94,10 @@ def reverse(head):
     """
     # Write your code here
     
-    if head is None  or head.next is None:
-        return head
+    pass
 
-    # recursively reverse the rest
-    new_head =  reverse(head.next)
-
-    temp = head.next
-
-    # make next node back to current
-    temp.next = head
-    # break the forward link 
-    head.next = None
-
-    return new_head
-
-def reverseLoop(head):                                                                    
-    prev = None                                                                           
-    curr = head                                                                           
-                                                                                    
-    while curr is not None:  # Loop while we have nodes to process                        
-        next = curr.next      # Save next node FIRST                                      
-        curr.next = prev      # Reverse the pointer                                       
-        prev = curr           # Move prev forward                                         
-        curr = next           # Move curr forward                                         
-                                                                                    
-    return prev  # prev is now at the head of reversed list                               
-                                                            
-
-
-
+def reverseLoop(head):
+    pass
 
 
 # Test cases

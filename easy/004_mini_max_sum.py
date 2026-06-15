@@ -40,23 +40,7 @@ def miniMaxSum(arr):
     Returns:
         None (prints the min and max sums)
     """
-    # Current approach: O(n²) - calculate each possible sum by excluding one element at a time
-    # More efficient approach: O(n)
-    #   total = sum(arr)
-    #   min_sum = total - max(arr)  # exclude the largest element
-    #   max_sum = total - min(arr)  # exclude the smallest element
-    #   print(min_sum, max_sum)
-
-    results = []
-    for i in range(5):
-        curSum = 0
-        for j in range(5):
-            if i != j:
-                curSum += arr[j]
-        # add the value to the main variable
-        results.append(curSum)
-
-    print(min(results), max(results))
+    pass
 
 # Test cases
 if __name__ == '__main__':

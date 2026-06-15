@@ -54,24 +54,7 @@ class Solution:
         Returns:
             bool: True if palindrome, False otherwise
         """
-        #clean up the words
-
-        clean_s = []
-        for i in list(s):
-            c = i.lower()
-            if c.isalnum():
-                clean_s.append(c)
-        #print(clean_s)
-        l = 0
-        r = len(clean_s) - 1
-        if clean_s:
-            while l < r:
-                if clean_s[l] != clean_s[r]:
-                    return False
-                l +=1
-                r -=1
-
-        return True
+        pass
 
 
 # Test cases

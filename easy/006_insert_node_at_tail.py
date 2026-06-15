@@ -91,19 +91,7 @@ def insertNodeAtTail(head, data):
         SinglyLinkedListNode: reference to the head of the modified linked list
     """
 
-    node = SinglyLinkedListNode(data)
-
-    if not head:
-        head = node
-    else:
-        temp = head
-        while temp.next:
-            #print(temp.data)
-            temp = temp.next
-            
-        temp.next = node
-
-    return head
+    pass
 
 
 # Test cases

@@ -38,8 +38,7 @@ def staircase(n):
     Returns:
         None (prints the staircase)
     """
-    for i in range(1,n+1):
-        print(" "*(n-i)+"#"*i)
+    pass
 
 # Test cases
 if __name__ == '__main__':

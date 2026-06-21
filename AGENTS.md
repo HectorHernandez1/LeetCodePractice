@@ -44,7 +44,25 @@ dotnet-script medium/XXX_problem.cs
   3. Update difficulty breakdown counts.
 - Optionally update `TODO.md` to mark problems complete.
 
+## Working in this repo
+- **At the start of every session**, load the `engineer-mentor` skill (`.opencode/skills/engineer-mentor/SKILL.md`) and follow its persona/modes for all work.
+- **Before writing a solution**, read `template.py` and one existing sibling file in the target difficulty folder to match the exact style (docstring header, `Solution` class, inline test block).
+- **Every solution is self-contained** — no shared modules, no external test framework. Tests live in the file's `if __name__ == "__main__"` (Python) / `runTests()` (TypeScript) block and use `assert`.
+- **Always document time and space complexity** in the method docstring.
+- **Prefer clarity over cleverness** — don't over-engineer. Optimize only after a correct solution exists.
+- **When unsure** about scope (new language, large refactor, changing conventions), ask before proceeding.
+
+## Verification (required before considering work done)
+- Run the file directly and confirm it prints `All tests passed!` (or equivalent) with zero errors:
+  - `python easy/XXX_problem.py`
+  - `bun easy/XXX_problem.ts`
+  - `node medium/XXX_problem.js`
+  - `dotnet-script medium/XXX_problem.cs`
+- Cover edge cases in tests: empty input, single element, large input, negative numbers (where relevant).
+- Do not mark a problem complete unless the file runs clean and `README.md` counts are updated.
+
 ## Important notes
 - No CI, no linting, no typechecking configured for this repo.
-- The `.claude.md` file contains detailed coding conventions, the "coding teacher" persona, and commit-message rules (no `Co-Authored-By` attributions). Consult it for style guidance.
+- The `.claude.md` file contains the "coding teacher" persona and detailed coding conventions. Consult it for style guidance; this `AGENTS.md` is the cross-tool source of truth for commands, structure, and workflow.
+- Commit messages must **not** include `Co-Authored-By` attributions.
 - Git: keep commits focused on single problems. Format: `Add [Problem Name] problem for day N`.

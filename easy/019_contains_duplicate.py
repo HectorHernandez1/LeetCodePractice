@@ -3,7 +3,7 @@
 Problem: Contains Duplicate
 Source: LeetCode #217
 Difficulty: Easy
-Date: TBD
+Date: 2026-07-12
 
 Description:
 Given an integer array nums, return true if any value appears at least twice in the array,
@@ -50,7 +50,14 @@ class Solution:
             bool: True if duplicates exist, False otherwise
         """
         # Write your code here
-        pass
+        checkList = set()
+        
+        for i in nums:
+            if i in checkList:
+                return True
+            checkList.add(i)
+        return False
+
 
 # Test cases
 if __name__ == '__main__':

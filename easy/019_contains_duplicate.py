@@ -64,28 +64,27 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     nums = [1, 2, 3, 1]
     result = solution.containsDuplicate(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 1: nums = {nums} -> {result} (expected True)")
+    assert result == True
 
     # Test case 2
-    print("Test 2:")
     nums = [1, 2, 3, 4]
     result = solution.containsDuplicate(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: False")
-    print()
+    print(f"Test 2: nums = {nums} -> {result} (expected False)")
+    assert result == False
 
     # Test case 3
-    print("Test 3:")
     nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
     result = solution.containsDuplicate(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 3: nums = {nums} -> {result} (expected True)")
+    assert result == True
+
+    # Test case 4: single element (no duplicate possible)
+    nums = [7]
+    result = solution.containsDuplicate(nums)
+    print(f"Test 4: nums = {nums} -> {result} (expected False)")
+    assert result == False
+
+    print("All tests passed!")

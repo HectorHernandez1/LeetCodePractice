@@ -5,23 +5,23 @@
   - File: `hard/001_trapping_rain_water.py`
 
 ## Stack-based Problems
-- [x] **Valid Parentheses** (LeetCode #20, Easy) - Check if brackets are balanced. Great intro to stacks.
+- [ ] **Valid Parentheses** (LeetCode #20, Easy) - Check if brackets are balanced. Great intro to stacks.
   - File: `easy/013_valid_parentheses.py`
 
 ## Two-pointer Technique
-- [x] **Valid Palindrome** (LeetCode #125, Easy) - Check if a string is a palindrome ignoring non-alphanumeric characters.
+- [ ] **Valid Palindrome** (LeetCode #125, Easy) - Check if a string is a palindrome ignoring non-alphanumeric characters.
   - File: `easy/014_valid_palindrome.py`
-- [x] **Merge Sorted Array** (LeetCode #88, Easy) - Merge two sorted arrays in-place using backward two-pointer technique.
+- [ ] **Merge Sorted Array** (LeetCode #88, Easy) - Merge two sorted arrays in-place using backward two-pointer technique.
   - Files: `easy/015_merge_sorted_array.py` | `easy/015_merge_sorted_array.ts` ✨
 
 ## Linked Lists
-- [x] **Merge Two Sorted Lists** (LeetCode #21, Easy) - Merge two sorted linked lists.
+- [ ] **Merge Two Sorted Lists** (LeetCode #21, Easy) - Merge two sorted linked lists.
   - File: `easy/016_merge_two_sorted_lists.py`
-- [x] **Linked List Cycle** (LeetCode #141, Easy) - Detect if a cycle exists (Floyd's algorithm).
+- [ ] **Linked List Cycle** (LeetCode #141, Easy) - Detect if a cycle exists (Floyd's algorithm).
   - File: `easy/017_linked_list_cycle.py`
 
 ## Binary Search
-- [x] **Binary Search** (LeetCode #704, Easy) - Classic binary search implementation.
+- [ ] **Binary Search** (LeetCode #704, Easy) - Classic binary search implementation.
   - File: `easy/018_binary_search.py`
 
 ## Array/Hash Set
@@ -31,10 +31,14 @@
   - Files: `easy/020_best_time_to_buy_and_sell_stock.py` | `easy/020_best_time_to_buy_and_sell_stock.ts` ✨
 
 ## String
-- [x] **Reverse String** (LeetCode #344, Easy) - Reverse string in-place using two-pointer technique.
+- [ ] **Reverse String** (LeetCode #344, Easy) - Reverse string in-place using two-pointer technique.
   - File: `easy/021_reverse_string.py`
 - [ ] **First Non-Repeating Character** (LeetCode #387, Easy) - Find the first character that doesn't repeat.
   - File: `easy/022_first_non_repeating_character.py`
+
+## Dynamic Programming
+- [ ] **Climbing Stairs** (LeetCode #70, Easy) - Count distinct ways to climb n stairs taking 1 or 2 steps. Intro to DP (Fibonacci recurrence).
+  - File: `easy/023_climbing_stairs.py`
 
 ## Math/Number Theory
 - [ ] **Count Primes in Range** (Classic, Medium) - Count prime numbers between two integers.
@@ -46,9 +50,9 @@
 
 ## Data Engineering & Data Science Problems
 These are practical data problems focused on data manipulation and analysis:
-- [x] **Data Cleaning & Aggregation** - Clean sensor data and calculate averages
+- [ ] **Data Cleaning & Aggregation** - Clean sensor data and calculate averages
   - File: `datascience/001_data_cleaning_aggregation.py`
-- [x] **Grouping & Aggregation** - Find top customers by spending
+- [ ] **Grouping & Aggregation** - Find top customers by spending
   - File: `datascience/002_grouping_aggregation.py`
 - [ ] **Time Series Analysis** - Find consecutive temperature increases
   - File: `datascience/003_time_series_analysis.py`

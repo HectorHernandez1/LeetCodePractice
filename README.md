@@ -28,13 +28,15 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 
 ## Progress
 
-**Total Problems Solved:** 24
-**TypeScript Versions:** 2 (in progress)
+> Fresh restart on 2026-07-12 — all solutions were reset to blank stubs for re-practice.
+> The first-pass log is archived below.
+
+**Total Problems Solved:** 1
 
 ### Algorithm Problems
-- Easy: 17
-- Medium: 4
-- Hard: 0 (1 added to solve)
+- Easy: 1
+- Medium: 0
+- Hard: 0
 
 **In Progress:** 0
 
@@ -45,9 +47,15 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 - C#: Select problems (004 Count Primes in Range)
 
 ### Data Science Problems
-- Completed: 2/7
+- Completed: 0/7
 
 ## Problems Log
+
+| # | Date | Problem | Difficulty | Source | Notes |
+|---|------|---------|------------|--------|-------|
+| 1 | 2026-07-12 | Contains Duplicate | Easy | LeetCode #217 | Hash set with early return (O(n) time, O(n) space) |
+
+### First Pass — Archived Log (solutions since reset)
 
 | # | Date | Problem | Difficulty | Source | Notes |
 |---|------|---------|------------|--------|-------|
@@ -83,15 +91,15 @@ Currently focusing on: **Easy Problems**
 
 ### Data Engineering & Data Science Problems
 A collection of 7 practical data problems focused on real-world data manipulation tasks:
-- Data cleaning & aggregation (001) ✓
-- Grouping & aggregation (002) ✓
+- Data cleaning & aggregation (001)
+- Grouping & aggregation (002)
 - Time series analysis (003)
 - Moving averages (004)
 - Data deduplication (005)
 - Pivot table implementation (006)
 - ETL pipelines (007)
 
-**Progress:** 2/7 completed
+**Progress:** 0/7 completed
 
 Each problem has its own file with tests. See: `datascience/` folder or `datascience/README.md`
 

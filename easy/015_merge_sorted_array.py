@@ -82,37 +82,24 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     nums1 = [1, 2, 3, 0, 0, 0]
-    m = 3
-    nums2 = [2, 5, 6]
-    n = 3
-    print(f"Input: nums1 = {nums1[:m] + [0]*n}, m = {m}, nums2 = {nums2}, n = {n}")
+    m, nums2, n = 3, [2, 5, 6], 3
     solution.merge(nums1, m, nums2, n)
-    print(f"Output: {nums1}")
-    print(f"Expected: [1, 2, 2, 3, 5, 6]")
-    print()
+    print(f"Test 1: -> {nums1} (expected [1, 2, 2, 3, 5, 6])")
+    assert nums1 == [1, 2, 2, 3, 5, 6], f"Got: {nums1}"
 
-    # Test case 2
-    print("Test 2:")
+    # Test case 2: nums2 empty
     nums1 = [1]
-    m = 1
-    nums2 = []
-    n = 0
-    print(f"Input: nums1 = {nums1}, m = {m}, nums2 = {nums2}, n = {n}")
+    m, nums2, n = 1, [], 0
     solution.merge(nums1, m, nums2, n)
-    print(f"Output: {nums1}")
-    print(f"Expected: [1]")
-    print()
+    print(f"Test 2: -> {nums1} (expected [1])")
+    assert nums1 == [1], f"Got: {nums1}"
 
-    # Test case 3
-    print("Test 3:")
+    # Test case 3: nums1 effectively empty
     nums1 = [0]
-    m = 0
-    nums2 = [1]
-    n = 1
-    print(f"Input: nums1 = {nums1}, m = {m}, nums2 = {nums2}, n = {n}")
+    m, nums2, n = 0, [1], 1
     solution.merge(nums1, m, nums2, n)
-    print(f"Output: {nums1}")
-    print(f"Expected: [1]")
-    print()
+    print(f"Test 3: -> {nums1} (expected [1])")
+    assert nums1 == [1], f"Got: {nums1}"
+
+    print("All tests passed!")

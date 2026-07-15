@@ -42,30 +42,28 @@ def staircase(n):
 
 # Test cases
 if __name__ == '__main__':
+    import io
+    from contextlib import redirect_stdout
+
+    def capture(n):
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            staircase(n)
+        return buf.getvalue()
+
     # Test case 1
-    print("Test 1 (n=4):")
-    staircase(4)
-    # Expected output:
-    #    #
-    #   ##
-    #  ###
-    # ####
-    print()
+    output = capture(4)
+    print(f"Test 1 (n=4):\n{output}", end='')
+    assert output == "   #\n  ##\n ###\n####\n", f"Got: {output!r}"
 
     # Test case 2
-    print("Test 2 (n=6):")
-    staircase(6)
-    # Expected output:
-    #      #
-    #     ##
-    #    ###
-    #   ####
-    #  #####
-    # ######
-    print()
+    output = capture(6)
+    print(f"Test 2 (n=6):\n{output}", end='')
+    assert output == "     #\n    ##\n   ###\n  ####\n #####\n######\n", f"Got: {output!r}"
 
-    # Test case 3
-    print("Test 3 (n=1):")
-    staircase(1)
-    # Expected output:
-    # #
+    # Test case 3: smallest staircase
+    output = capture(1)
+    print(f"Test 3 (n=1):\n{output}", end='')
+    assert output == "#\n", f"Got: {output!r}"
+
+    print("All tests passed!")

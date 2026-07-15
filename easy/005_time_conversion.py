@@ -55,40 +55,33 @@ def timeConversion(s):
 # Test cases
 if __name__ == '__main__':
     # Test case 1
-    print("Test 1:")
-    s1 = "07:05:45PM"
-    print(f"Input: {s1}")
-    print(f"Output: {timeConversion(s1)}")
-    # Expected output: 19:05:45
-    print()
+    s = "07:05:45PM"
+    result = timeConversion(s)
+    print(f"Test 1: {s} -> {result} (expected 19:05:45)")
+    assert result == "19:05:45", f"Got: {result!r}"
 
-    # Test case 2
-    print("Test 2:")
-    s2 = "12:01:00PM"
-    print(f"Input: {s2}")
-    print(f"Output: {timeConversion(s2)}")
-    # Expected output: 12:01:00
-    print()
+    # Test case 2: noon stays 12
+    s = "12:01:00PM"
+    result = timeConversion(s)
+    print(f"Test 2: {s} -> {result} (expected 12:01:00)")
+    assert result == "12:01:00", f"Got: {result!r}"
 
-    # Test case 3
-    print("Test 3:")
-    s3 = "12:01:00AM"
-    print(f"Input: {s3}")
-    print(f"Output: {timeConversion(s3)}")
-    # Expected output: 00:01:00
-    print()
+    # Test case 3: midnight becomes 00
+    s = "12:01:00AM"
+    result = timeConversion(s)
+    print(f"Test 3: {s} -> {result} (expected 00:01:00)")
+    assert result == "00:01:00", f"Got: {result!r}"
 
-    # Test case 4
-    print("Test 4:")
-    s4 = "12:00:00AM"
-    print(f"Input: {s4}")
-    print(f"Output: {timeConversion(s4)}")
-    # Expected output: 00:00:00
-    print()
+    # Test case 4: exactly midnight
+    s = "12:00:00AM"
+    result = timeConversion(s)
+    print(f"Test 4: {s} -> {result} (expected 00:00:00)")
+    assert result == "00:00:00", f"Got: {result!r}"
 
-    # Test case 5
-    print("Test 5:")
-    s5 = "12:00:00PM"
-    print(f"Input: {s5}")
-    print(f"Output: {timeConversion(s5)}")
-    # Expected output: 12:00:00
+    # Test case 5: exactly noon
+    s = "12:00:00PM"
+    result = timeConversion(s)
+    print(f"Test 5: {s} -> {result} (expected 12:00:00)")
+    assert result == "12:00:00", f"Got: {result!r}"
+
+    print("All tests passed!")

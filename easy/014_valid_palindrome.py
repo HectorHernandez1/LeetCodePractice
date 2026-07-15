@@ -62,28 +62,27 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     s = "A man, a plan, a canal: Panama"
     result = solution.isPalindrome(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 1: '{s}' -> {result} (expected True)")
+    assert result == True
 
     # Test case 2
-    print("Test 2:")
     s = "race a car"
     result = solution.isPalindrome(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: False")
-    print()
+    print(f"Test 2: '{s}' -> {result} (expected False)")
+    assert result == False
 
-    # Test case 3
-    print("Test 3:")
+    # Test case 3: only non-alphanumeric characters
     s = " "
     result = solution.isPalindrome(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 3: '{s}' -> {result} (expected True)")
+    assert result == True
+
+    # Test case 4: mixed case and digits
+    s = "0P"
+    result = solution.isPalindrome(s)
+    print(f"Test 4: '{s}' -> {result} (expected False)")
+    assert result == False
+
+    print("All tests passed!")

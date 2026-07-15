@@ -68,46 +68,39 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
     result = solution.maxSubArray(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: 6")
-    print()
+    print(f"Test 1: {nums} -> {result} (expected 6)")
+    assert result == 6, f"Got: {result}"
 
-    # Test case 2
-    print("Test 2:")
+    # Test case 2: single element
     nums = [1]
     result = solution.maxSubArray(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: 1")
-    print()
+    print(f"Test 2: {nums} -> {result} (expected 1)")
+    assert result == 1, f"Got: {result}"
 
     # Test case 3
-    print("Test 3:")
     nums = [5, 4, -1, 7, 8]
     result = solution.maxSubArray(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: 23")
-    print()
+    print(f"Test 3: {nums} -> {result} (expected 23)")
+    assert result == 23, f"Got: {result}"
 
-    # Test case 4 (all negative)
-    print("Test 4:")
+    # Test case 4: all negative
     nums = [-2, -1]
     result = solution.maxSubArray(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: -1")
-    print()
+    print(f"Test 4: {nums} -> {result} (expected -1)")
+    assert result == -1, f"Got: {result}"
 
-    # Test case 5 (mix of positive and negative)
-    print("Test 5:")
+    # Test case 5: mix of positive and negative
     nums = [-2, 1]
     result = solution.maxSubArray(nums)
-    print(f"Input: nums = {nums}")
-    print(f"Output: {result}")
-    print(f"Expected: 1")
-    print()
+    print(f"Test 5: {nums} -> {result} (expected 1)")
+    assert result == 1, f"Got: {result}"
+
+    # Test case 6: larger array
+    nums = [8, -19, 5, -4, 20]
+    result = solution.maxSubArray(nums)
+    print(f"Test 6: {nums} -> {result} (expected 21)")
+    assert result == 21, f"Got: {result}"
+
+    print("All tests passed!")

@@ -86,46 +86,27 @@ def gradingStudents(grades):
 # Test cases
 if __name__ == '__main__':
     # Test case 1: Sample input
-    print("Test 1:")
-    grades1 = [73, 67, 38, 33]
-    print(f"Input grades: {grades1}")
-    result1 = gradingStudents(grades1)
-    print(f"Output: {result1}")
-    # Expected: [75, 67, 40, 33]
-    print()
+    grades = [73, 67, 38, 33]
+    result = gradingStudents(grades)
+    print(f"Test 1: {grades} -> {result} (expected [75, 67, 40, 33])")
+    assert result == [75, 67, 40, 33], f"Got: {result}"
 
-    # Test case 2: Edge cases
-    print("Test 2:")
-    grades2 = [84, 29, 57]
-    print(f"Input grades: {grades2}")
-    result2 = gradingStudents(grades2)
-    print(f"Output: {result2}")
-    # Expected: [85, 29, 57]
-    print()
+    # Test case 2
+    grades = [84, 29, 57]
+    result = gradingStudents(grades)
+    print(f"Test 2: {grades} -> {result} (expected [85, 29, 57])")
+    assert result == [85, 29, 57], f"Got: {result}"
 
-    # Test case 3: Boundary cases
-    print("Test 3:")
-    grades3 = [37, 38, 40, 100, 0]
-    print(f"Input grades: {grades3}")
-    result3 = gradingStudents(grades3)
-    print(f"Output: {result3}")
-    # Expected: [37, 40, 40, 100, 0]
-    # 37 -> below 38, no rounding
-    # 38 -> next multiple is 40, diff is 2 < 3, round to 40
-    # 40 -> already a multiple of 5
-    # 100 -> already a multiple of 5
-    # 0 -> below 38, no rounding
-    print()
+    # Test case 3: Boundary cases (below 38, exact multiples, 0 and 100)
+    grades = [37, 38, 40, 100, 0]
+    result = gradingStudents(grades)
+    print(f"Test 3: {grades} -> {result} (expected [37, 40, 40, 100, 0])")
+    assert result == [37, 40, 40, 100, 0], f"Got: {result}"
 
-    # Test case 4: Just below rounding threshold
-    print("Test 4:")
-    grades4 = [83, 84, 85, 86, 87]
-    print(f"Input grades: {grades4}")
-    result4 = gradingStudents(grades4)
-    print(f"Output: {result4}")
-    # Expected: [85, 85, 85, 86, 87]
-    # 83 -> next is 85, diff is 2 < 3, round to 85
-    # 84 -> next is 85, diff is 1 < 3, round to 85
-    # 85 -> already multiple of 5
-    # 86 -> next is 90, diff is 4 >= 3, no rounding
-    # 87 -> next is 90, diff is 3 >= 3, no rounding
+    # Test case 4: Just below/above rounding threshold
+    grades = [83, 84, 85, 86, 87]
+    result = gradingStudents(grades)
+    print(f"Test 4: {grades} -> {result} (expected [85, 85, 85, 86, 87])")
+    assert result == [85, 85, 85, 86, 87], f"Got: {result}"
+
+    print("All tests passed!")

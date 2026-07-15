@@ -70,51 +70,43 @@ def sum_to_n(nums, n):
 
 # Test cases
 if __name__ == '__main__':
+    def canonical(combos):
+        """Sort each combination and the list of combinations so
+        assertions are independent of the order the solution returns."""
+        assert combos is not None, "Got: None"
+        return sorted(sorted(c) for c in combos)
+
     # Test case 1
-    print("Test 1:")
-    nums1 = [2, 3, 5, 7, 10]
-    n1 = 10
-    print(f"nums = {nums1}, n = {n1}")
-    result1 = sum_to_n(nums1, n1)
-    print(f"Output: {result1}")
-    # Expected: [[2, 3, 5], [3, 7], [10]] (order may vary)
-    print()
+    nums, n = [2, 3, 5, 7, 10], 10
+    result = sum_to_n(nums, n)
+    expected = [[2, 3, 5], [3, 7], [10]]
+    print(f"Test 1: nums = {nums}, n = {n} -> {result}")
+    assert canonical(result) == canonical(expected), f"Got: {result}"
 
     # Test case 2
-    print("Test 2:")
-    nums2 = [1, 2, 3, 4, 5]
-    n2 = 5
-    print(f"nums = {nums2}, n = {n2}")
-    result2 = sum_to_n(nums2, n2)
-    print(f"Output: {result2}")
-    # Expected: [[1, 4], [2, 3], [5]] (order may vary)
-    print()
+    nums, n = [1, 2, 3, 4, 5], 5
+    result = sum_to_n(nums, n)
+    expected = [[1, 4], [2, 3], [5]]
+    print(f"Test 2: nums = {nums}, n = {n} -> {result}")
+    assert canonical(result) == canonical(expected), f"Got: {result}"
 
-    # Test case 3: With duplicates in input
-    print("Test 3:")
-    nums3 = [1, 1, 2, 3]
-    n3 = 4
-    print(f"nums = {nums3}, n = {n3}")
-    result3 = sum_to_n(nums3, n3)
-    print(f"Output: {result3}")
-    # Expected: [[1, 1, 2], [1, 3]] (order may vary)
-    print()
+    # Test case 3: duplicates in input
+    nums, n = [1, 1, 2, 3], 4
+    result = sum_to_n(nums, n)
+    expected = [[1, 1, 2], [1, 3]]
+    print(f"Test 3: nums = {nums}, n = {n} -> {result}")
+    assert canonical(result) == canonical(expected), f"Got: {result}"
 
-    # Test case 4: No solution
-    print("Test 4:")
-    nums4 = [5, 10, 15]
-    n4 = 3
-    print(f"nums = {nums4}, n = {n4}")
-    result4 = sum_to_n(nums4, n4)
-    print(f"Output: {result4}")
-    # Expected: []
-    print()
+    # Test case 4: no solution
+    nums, n = [5, 10, 15], 3
+    result = sum_to_n(nums, n)
+    print(f"Test 4: nums = {nums}, n = {n} -> {result} (expected [])")
+    assert result == [], f"Got: {result}"
 
-    # Test case 5: Single element solution
-    print("Test 5:")
-    nums5 = [7]
-    n5 = 7
-    print(f"nums = {nums5}, n = {n5}")
-    result5 = sum_to_n(nums5, n5)
-    print(f"Output: {result5}")
-    # Expected: [[7]]
+    # Test case 5: single element solution
+    nums, n = [7], 7
+    result = sum_to_n(nums, n)
+    print(f"Test 5: nums = {nums}, n = {n} -> {result} (expected [[7]])")
+    assert canonical(result) == [[7]], f"Got: {result}"
+
+    print("All tests passed!")

@@ -102,28 +102,21 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1: Cycle exists
-    print("Test 1:")
     head = create_linked_list_with_cycle([3, 2, 0, -4], 1)
     result = solution.hasCycle(head)
-    print(f"Input: head = [3,2,0,-4], pos = 1")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 1: [3,2,0,-4], pos = 1 -> {result} (expected True)")
+    assert result == True
 
-    # Test case 2: Cycle exists at head
-    print("Test 2:")
+    # Test case 2: Cycle at head
     head = create_linked_list_with_cycle([1, 2], 0)
     result = solution.hasCycle(head)
-    print(f"Input: head = [1,2], pos = 0")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 2: [1,2], pos = 0 -> {result} (expected True)")
+    assert result == True
 
     # Test case 3: No cycle
-    print("Test 3:")
     head = create_linked_list_with_cycle([1], -1)
     result = solution.hasCycle(head)
-    print(f"Input: head = [1], pos = -1")
-    print(f"Output: {result}")
-    print(f"Expected: False")
-    print()
+    print(f"Test 3: [1], pos = -1 -> {result} (expected False)")
+    assert result == False
+
+    print("All tests passed!")

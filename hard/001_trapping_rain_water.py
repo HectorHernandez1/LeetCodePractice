@@ -53,46 +53,33 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
-    height = [0,1,0,2,1,0,1,3,2,1,2,1]
+    height = [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
     result = solution.trap(height)
-    print(f"Input: height = {height}")
-    print(f"Output: {result}")
-    print(f"Expected: 6")
-    print()
+    print(f"Test 1: {height} -> {result} (expected 6)")
+    assert result == 6, f"Got: {result}"
 
     # Test case 2
-    print("Test 2:")
-    height = [4,2,0,3,2,5]
+    height = [4, 2, 0, 3, 2, 5]
     result = solution.trap(height)
-    print(f"Input: height = {height}")
-    print(f"Output: {result}")
-    print(f"Expected: 9")
-    print()
+    print(f"Test 2: {height} -> {result} (expected 9)")
+    assert result == 9, f"Got: {result}"
 
-    # Test case 3
-    print("Test 3:")
-    height = [0,2,0]
+    # Test case 3: single valley too shallow to trap water
+    height = [0, 2, 0]
     result = solution.trap(height)
-    print(f"Input: height = {height}")
-    print(f"Output: {result}")
-    print(f"Expected: 0")
-    print()
+    print(f"Test 3: {height} -> {result} (expected 0)")
+    assert result == 0, f"Got: {result}"
 
     # Test case 4
-    print("Test 4:")
-    height = [3,0,2,0,4]
+    height = [3, 0, 2, 0, 4]
     result = solution.trap(height)
-    print(f"Input: height = {height}")
-    print(f"Output: {result}")
-    print(f"Expected: 7")
-    print()
+    print(f"Test 4: {height} -> {result} (expected 7)")
+    assert result == 7, f"Got: {result}"
 
-    # Test case 5
-    print("Test 5:")
+    # Test case 5: empty input
     height = []
     result = solution.trap(height)
-    print(f"Input: height = {height}")
-    print(f"Output: {result}")
-    print(f"Expected: 0")
-    print()
+    print(f"Test 5: {height} -> {result} (expected 0)")
+    assert result == 0, f"Got: {result}"
+
+    print("All tests passed!")

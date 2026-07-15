@@ -54,38 +54,28 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
 
-    # Test case 1
-    print("Test 1:")
+    # Test case 1: odd length
     s = ["h", "e", "l", "l", "o"]
-    print(f"Input: s = {s}")
     solution.reverseString(s)
-    print(f"Output: {s}")
-    print(f"Expected: ['o', 'l', 'l', 'e', 'h']")
-    print()
+    print(f"Test 1: -> {s} (expected ['o', 'l', 'l', 'e', 'h'])")
+    assert s == ["o", "l", "l", "e", "h"], f"Got: {s}"
 
-    # Test case 2
-    print("Test 2:")
+    # Test case 2: even length
     s = ["H", "a", "n", "n", "a", "h"]
-    print(f"Input: s = {s}")
     solution.reverseString(s)
-    print(f"Output: {s}")
-    print(f"Expected: ['h', 'a', 'n', 'n', 'a', 'H']")
-    print()
+    print(f"Test 2: -> {s} (expected ['h', 'a', 'n', 'n', 'a', 'H'])")
+    assert s == ["h", "a", "n", "n", "a", "H"], f"Got: {s}"
 
-    # Test case 3: Single character
-    print("Test 3:")
+    # Test case 3: single character
     s = ["a"]
-    print(f"Input: s = {s}")
     solution.reverseString(s)
-    print(f"Output: {s}")
-    print(f"Expected: ['a']")
-    print()
+    print(f"Test 3: -> {s} (expected ['a'])")
+    assert s == ["a"], f"Got: {s}"
 
-    # Test case 4: Two characters
-    print("Test 4:")
+    # Test case 4: two characters
     s = ["A", "b"]
-    print(f"Input: s = {s}")
     solution.reverseString(s)
-    print(f"Output: {s}")
-    print(f"Expected: ['b', 'A']")
-    print()
+    print(f"Test 4: -> {s} (expected ['b', 'A'])")
+    assert s == ["b", "A"], f"Got: {s}"
+
+    print("All tests passed!")

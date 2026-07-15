@@ -70,61 +70,27 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
 
-    # Test case 1: [2,7,11,15], target = 9
-    print("Test 1:")
-    nums = [2, 7, 11, 15]
-    target = 9
-    result = solution.twoSum(nums, target)
-    print(f"Input: nums = {nums}, target = {target}")
-    print(f"Output: {result}")
-    print(f"Expected: [0, 1]")
-    if result:
-        print(f"Verification: {nums[result[0]]} + {nums[result[1]]} = {nums[result[0]] + nums[result[1]]}")
-    print()
+    def check(nums, target, expected):
+        """Assert indices match (order-independent) and actually sum to target."""
+        result = solution.twoSum(nums, target)
+        print(f"nums = {nums}, target = {target} -> {result} (expected {expected})")
+        assert result is not None, "Got: None"
+        assert sorted(result) == sorted(expected), f"Got: {result}"
+        assert nums[result[0]] + nums[result[1]] == target
 
-    # Test case 2: [3,2,4], target = 6
-    print("Test 2:")
-    nums = [3, 2, 4]
-    target = 6
-    result = solution.twoSum(nums, target)
-    print(f"Input: nums = {nums}, target = {target}")
-    print(f"Output: {result}")
-    print(f"Expected: [1, 2]")
-    if result:
-        print(f"Verification: {nums[result[0]]} + {nums[result[1]]} = {nums[result[0]] + nums[result[1]]}")
-    print()
+    print("Test 1: ", end='')
+    check([2, 7, 11, 15], 9, [0, 1])
 
-    # Test case 3: [3,3], target = 6
-    print("Test 3:")
-    nums = [3, 3]
-    target = 6
-    result = solution.twoSum(nums, target)
-    print(f"Input: nums = {nums}, target = {target}")
-    print(f"Output: {result}")
-    print(f"Expected: [0, 1]")
-    if result:
-        print(f"Verification: {nums[result[0]]} + {nums[result[1]]} = {nums[result[0]] + nums[result[1]]}")
-    print()
+    print("Test 2: ", end='')
+    check([3, 2, 4], 6, [1, 2])
 
-    # Test case 4: Negative numbers
-    print("Test 4:")
-    nums = [-1, -2, -3, 5, 10]
-    target = 8
-    result = solution.twoSum(nums, target)
-    print(f"Input: nums = {nums}, target = {target}")
-    print(f"Output: {result}")
-    print(f"Expected: [3, 4]")
-    if result:
-        print(f"Verification: {nums[result[0]]} + {nums[result[1]]} = {nums[result[0]] + nums[result[1]]}")
-    print()
+    print("Test 3: duplicate values, ", end='')
+    check([3, 3], 6, [0, 1])
 
-    # Test case 5: Duplicate values
-    print("Test 5:")
-    nums = [1, 2, 3, 4, 5]
-    target = 9
-    result = solution.twoSum(nums, target)
-    print(f"Input: nums = {nums}, target = {target}")
-    print(f"Output: {result}")
-    print(f"Expected: [3, 4]")
-    if result:
-        print(f"Verification: {nums[result[0]]} + {nums[result[1]]} = {nums[result[0]] + nums[result[1]]}")
+    print("Test 4: negative numbers, ", end='')
+    check([-1, -2, -3, 5, 10], 8, [3, 4])
+
+    print("Test 5: ", end='')
+    check([1, 2, 3, 4, 5], 9, [3, 4])
+
+    print("All tests passed!")

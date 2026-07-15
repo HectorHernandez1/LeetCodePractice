@@ -102,65 +102,45 @@ def reverseLoop(head):
 
 # Test cases
 if __name__ == '__main__':
+    def to_list(node):
+        """Convert a linked list to a Python list for easy assertions."""
+        vals = []
+        while node:
+            vals.append(node.data)
+            node = node.next
+        return vals
+
     # Test case 1: Reverse list [1, 2, 3, 4, 5]
-    print("Test 1:")
     llist = SinglyLinkedList()
-    values = [1, 2, 3, 4, 5]
-    for val in values:
+    for val in [1, 2, 3, 4, 5]:
         llist.insert_node(val)
-
-    print(f"Original list: ", end='')
-    print_singly_linked_list(llist.head, ' -> ')
-
     llist.head = reverse(llist.head)
-
-    print(f"Reversed list: ", end='')
-    print_singly_linked_list(llist.head, ' -> ')
-    # Expected output: 5 -> 4 -> 3 -> 2 -> 1
-    print()
+    result = to_list(llist.head)
+    print(f"Test 1: reverse [1, 2, 3, 4, 5] -> {result}")
+    assert result == [5, 4, 3, 2, 1], f"Got: {result}"
 
     # Test case 2: Single element
-    print("Test 2:")
     llist2 = SinglyLinkedList()
     llist2.insert_node(42)
-
-    print(f"Original list: ", end='')
-    print_singly_linked_list(llist2.head)
-
     llist2.head = reverse(llist2.head)
-
-    print(f"Reversed list: ", end='')
-    print_singly_linked_list(llist2.head)
-    # Expected output: 42
-    print()
+    result = to_list(llist2.head)
+    print(f"Test 2: reverse [42] -> {result}")
+    assert result == [42], f"Got: {result}"
 
     # Test case 3: Two elements
-    print("Test 3:")
     llist3 = SinglyLinkedList()
     llist3.insert_node(1)
     llist3.insert_node(2)
-
-    print(f"Original list: ", end='')
-    print_singly_linked_list(llist3.head, ' -> ')
-
     llist3.head = reverse(llist3.head)
-
-    print(f"Reversed list: ", end='')
-    print_singly_linked_list(llist3.head, ' -> ')
-    # Expected output: 2 -> 1
-    print()
+    result = to_list(llist3.head)
+    print(f"Test 3: reverse [1, 2] -> {result}")
+    assert result == [2, 1], f"Got: {result}"
 
     # Test case 4: Empty list
-    print("Test 4:")
     llist4 = SinglyLinkedList()
-
-    print(f"Original list: (empty)")
-
     llist4.head = reverse(llist4.head)
+    result = to_list(llist4.head)
+    print(f"Test 4: reverse [] -> {result}")
+    assert result == [], f"Got: {result}"
 
-    print(f"Reversed list: ", end='')
-    if llist4.head is None:
-        print("(empty)")
-    else:
-        print_singly_linked_list(llist4.head)
-    # Expected output: (empty)
+    print("All tests passed!")

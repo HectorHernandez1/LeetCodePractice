@@ -44,29 +44,37 @@ def miniMaxSum(arr):
 
 # Test cases
 if __name__ == '__main__':
+    import io
+    from contextlib import redirect_stdout
+
+    def capture(arr):
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            miniMaxSum(arr)
+        return buf.getvalue()
+
     # Test case 1
-    print("Test 1:")
-    arr1 = [1, 2, 3, 4, 5]
-    miniMaxSum(arr1)
-    # Expected output: 10 14
-    print()
+    arr = [1, 2, 3, 4, 5]
+    output = capture(arr)
+    print(f"Test 1: arr = {arr} -> {output.strip()} (expected 10 14)")
+    assert output == "10 14\n", f"Got: {output!r}"
 
     # Test case 2
-    print("Test 2:")
-    arr2 = [7, 69, 2, 221, 8974]
-    miniMaxSum(arr2)
-    # Expected output: 299 9271
-    print()
+    arr = [7, 69, 2, 221, 8974]
+    output = capture(arr)
+    print(f"Test 2: arr = {arr} -> {output.strip()} (expected 299 9271)")
+    assert output == "299 9271\n", f"Got: {output!r}"
 
-    # Test case 3
-    print("Test 3:")
-    arr3 = [5, 5, 5, 5, 5]
-    miniMaxSum(arr3)
-    # Expected output: 20 20
-    print()
+    # Test case 3: all equal
+    arr = [5, 5, 5, 5, 5]
+    output = capture(arr)
+    print(f"Test 3: arr = {arr} -> {output.strip()} (expected 20 20)")
+    assert output == "20 20\n", f"Got: {output!r}"
 
     # Test case 4
-    print("Test 4:")
-    arr4 = [1, 3, 5, 7, 9]
-    miniMaxSum(arr4)
-    # Expected output: 16 24
+    arr = [1, 3, 5, 7, 9]
+    output = capture(arr)
+    print(f"Test 4: arr = {arr} -> {output.strip()} (expected 16 24)")
+    assert output == "16 24\n", f"Got: {output!r}"
+
+    print("All tests passed!")

@@ -93,31 +93,24 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     list1 = create_linked_list([1, 2, 4])
     list2 = create_linked_list([1, 3, 4])
-    result = solution.mergeTwoLists(list1, list2)
-    print(f"Input: list1 = [1,2,4], list2 = [1,3,4]")
-    print(f"Output: {linked_list_to_array(result)}")
-    print(f"Expected: [1, 1, 2, 3, 4, 4]")
-    print()
+    result = linked_list_to_array(solution.mergeTwoLists(list1, list2))
+    print(f"Test 1: [1,2,4] + [1,3,4] -> {result} (expected [1, 1, 2, 3, 4, 4])")
+    assert result == [1, 1, 2, 3, 4, 4], f"Got: {result}"
 
-    # Test case 2
-    print("Test 2:")
+    # Test case 2: both empty
     list1 = create_linked_list([])
     list2 = create_linked_list([])
-    result = solution.mergeTwoLists(list1, list2)
-    print(f"Input: list1 = [], list2 = []")
-    print(f"Output: {linked_list_to_array(result)}")
-    print(f"Expected: []")
-    print()
+    result = linked_list_to_array(solution.mergeTwoLists(list1, list2))
+    print(f"Test 2: [] + [] -> {result} (expected [])")
+    assert result == [], f"Got: {result}"
 
-    # Test case 3
-    print("Test 3:")
+    # Test case 3: one empty
     list1 = create_linked_list([])
     list2 = create_linked_list([0])
-    result = solution.mergeTwoLists(list1, list2)
-    print(f"Input: list1 = [], list2 = [0]")
-    print(f"Output: {linked_list_to_array(result)}")
-    print(f"Expected: [0]")
-    print()
+    result = linked_list_to_array(solution.mergeTwoLists(list1, list2))
+    print(f"Test 3: [] + [0] -> {result} (expected [0])")
+    assert result == [0], f"Got: {result}"
+
+    print("All tests passed!")

@@ -68,46 +68,39 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     s = "()"
     result = solution.isValid(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 1: '{s}' -> {result} (expected True)")
+    assert result == True
 
     # Test case 2
-    print("Test 2:")
     s = "()[]{}"
     result = solution.isValid(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 2: '{s}' -> {result} (expected True)")
+    assert result == True
 
-    # Test case 3
-    print("Test 3:")
+    # Test case 3: mismatched pair
     s = "(]"
     result = solution.isValid(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: False")
-    print()
+    print(f"Test 3: '{s}' -> {result} (expected False)")
+    assert result == False
 
-    # Test case 4
-    print("Test 4:")
+    # Test case 4: interleaved brackets
     s = "([)]"
     result = solution.isValid(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: False")
-    print()
+    print(f"Test 4: '{s}' -> {result} (expected False)")
+    assert result == False
 
-    # Test case 5
-    print("Test 5:")
+    # Test case 5: nested brackets
     s = "{[]}"
     result = solution.isValid(s)
-    print(f"Input: s = '{s}'")
-    print(f"Output: {result}")
-    print(f"Expected: True")
-    print()
+    print(f"Test 5: '{s}' -> {result} (expected True)")
+    assert result == True
+
+    # Test case 6: unclosed opening bracket
+    s = "("
+    result = solution.isValid(s)
+    print(f"Test 6: '{s}' -> {result} (expected False)")
+    assert result == False
+
+    print("All tests passed!")

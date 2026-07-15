@@ -39,29 +39,31 @@ def plusMinus(arr):
 
 # Test cases
 if __name__ == '__main__':
+    import io
+    from contextlib import redirect_stdout
+
+    def capture(arr):
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            plusMinus(arr)
+        return buf.getvalue()
+
     # Test case 1
-    print("Test 1:")
-    arr1 = [-4, 3, -9, 0, 4, 1]
-    plusMinus(arr1)
-    print()  # Expected output:
-             # 0.500000
-             # 0.333333
-             # 0.166667
+    arr = [-4, 3, -9, 0, 4, 1]
+    output = capture(arr)
+    print(f"Test 1: arr = {arr}\n{output}", end='')
+    assert output == "0.500000\n0.333333\n0.166667\n", f"Got: {output!r}"
 
     # Test case 2
-    print("Test 2:")
-    arr2 = [1, 2, 3, -1, -2, -3, 0, 0]
-    plusMinus(arr2)
-    print()  # Expected output:
-             # 0.375000
-             # 0.375000
-             # 0.250000
+    arr = [1, 2, 3, -1, -2, -3, 0, 0]
+    output = capture(arr)
+    print(f"Test 2: arr = {arr}\n{output}", end='')
+    assert output == "0.375000\n0.375000\n0.250000\n", f"Got: {output!r}"
 
     # Test case 3
-    print("Test 3:")
-    arr3 = [1, 1, 0, -1, -1]
-    plusMinus(arr3)
-    print()  # Expected output:
-             # 0.400000
-             # 0.400000
-             # 0.200000
+    arr = [1, 1, 0, -1, -1]
+    output = capture(arr)
+    print(f"Test 3: arr = {arr}\n{output}", end='')
+    assert output == "0.400000\n0.400000\n0.200000\n", f"Got: {output!r}"
+
+    print("All tests passed!")

@@ -104,56 +104,31 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1: 342 + 465 = 807
-    print("Test 1:")
     l1 = create_linked_list([2, 4, 3])
     l2 = create_linked_list([5, 6, 4])
-    print("l1: ", end='')
-    print_linked_list(l1)
-    print("l2: ", end='')
-    print_linked_list(l2)
-    result = solution.addTwoNumbers(l1, l2)
-    print("Result: ", end='')
-    print_linked_list(result)
-    print(f"Expected: 7 -> 0 -> 8")
-    print()
+    result = linked_list_to_array(solution.addTwoNumbers(l1, l2))
+    print(f"Test 1: 342 + 465 -> {result} (expected [7, 0, 8])")
+    assert result == [7, 0, 8], f"Got: {result}"
 
     # Test case 2: 0 + 0 = 0
-    print("Test 2:")
     l1 = create_linked_list([0])
     l2 = create_linked_list([0])
-    print("l1: ", end='')
-    print_linked_list(l1)
-    print("l2: ", end='')
-    print_linked_list(l2)
-    result = solution.addTwoNumbers(l1, l2)
-    print("Result: ", end='')
-    print_linked_list(result)
-    print(f"Expected: 0")
-    print()
+    result = linked_list_to_array(solution.addTwoNumbers(l1, l2))
+    print(f"Test 2: 0 + 0 -> {result} (expected [0])")
+    assert result == [0], f"Got: {result}"
 
-    # Test case 3: 9999999 + 9999 = 10009998
-    print("Test 3:")
+    # Test case 3: 9999999 + 9999 = 10009998 (carry ripples)
     l1 = create_linked_list([9, 9, 9, 9, 9, 9, 9])
     l2 = create_linked_list([9, 9, 9, 9])
-    print("l1: ", end='')
-    print_linked_list(l1)
-    print("l2: ", end='')
-    print_linked_list(l2)
-    result = solution.addTwoNumbers(l1, l2)
-    print("Result: ", end='')
-    print_linked_list(result)
-    print(f"Expected: 8 -> 9 -> 9 -> 9 -> 0 -> 0 -> 0 -> 1")
-    print()
+    result = linked_list_to_array(solution.addTwoNumbers(l1, l2))
+    print(f"Test 3: 9999999 + 9999 -> {result} (expected [8, 9, 9, 9, 0, 0, 0, 1])")
+    assert result == [8, 9, 9, 9, 0, 0, 0, 1], f"Got: {result}"
 
-    # Test case 4: Different lengths - 99 + 1 = 100
-    print("Test 4:")
+    # Test case 4: different lengths - 99 + 1 = 100
     l1 = create_linked_list([9, 9])
     l2 = create_linked_list([1])
-    print("l1: ", end='')
-    print_linked_list(l1)
-    print("l2: ", end='')
-    print_linked_list(l2)
-    result = solution.addTwoNumbers(l1, l2)
-    print("Result: ", end='')
-    print_linked_list(result)
-    print(f"Expected: 0 -> 0 -> 1")
+    result = linked_list_to_array(solution.addTwoNumbers(l1, l2))
+    print(f"Test 4: 99 + 1 -> {result} (expected [0, 0, 1])")
+    assert result == [0, 0, 1], f"Got: {result}"
+
+    print("All tests passed!")

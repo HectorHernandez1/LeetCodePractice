@@ -96,44 +96,37 @@ def insertNodeAtTail(head, data):
 
 # Test cases
 if __name__ == '__main__':
+    def to_list(node):
+        """Convert a linked list to a Python list for easy assertions."""
+        vals = []
+        while node:
+            vals.append(node.data)
+            node = node.next
+        return vals
+
     # Test case 1: Build list from sample input
-    print("Test 1:")
     llist = SinglyLinkedList()
     values = [141, 302, 164, 530, 474]
-    print(f"Inserting values: {values}")
-
     for val in values:
         llist.head = insertNodeAtTail(llist.head, val)
-
-    print("Output: ", end='')
-    print_singly_linked_list(llist.head, '\n')
-    # Expected output:
-    # 141
-    # 302
-    # 164
-    # 530
-    # 474
-    print()
+    result = to_list(llist.head)
+    print(f"Test 1: insert {values} at tail -> {result}")
+    assert result == [141, 302, 164, 530, 474], f"Got: {result}"
 
     # Test case 2: Empty list, insert single element
-    print("Test 2:")
     llist2 = SinglyLinkedList()
-    print("Inserting single value: 42")
     llist2.head = insertNodeAtTail(llist2.head, 42)
-    print("Output: ", end='')
-    print_singly_linked_list(llist2.head)
-    # Expected output: 42
-    print()
+    result = to_list(llist2.head)
+    print(f"Test 2: insert 42 into empty list -> {result}")
+    assert result == [42], f"Got: {result}"
 
     # Test case 3: Insert multiple elements
-    print("Test 3:")
     llist3 = SinglyLinkedList()
     values3 = [1, 2, 3]
-    print(f"Inserting values: {values3}")
-
     for val in values3:
         llist3.head = insertNodeAtTail(llist3.head, val)
+    result = to_list(llist3.head)
+    print(f"Test 3: insert {values3} at tail -> {result}")
+    assert result == [1, 2, 3], f"Got: {result}"
 
-    print("Output: ", end='')
-    print_singly_linked_list(llist3.head, ' -> ')
-    # Expected output: 1 -> 2 -> 3
+    print("All tests passed!")

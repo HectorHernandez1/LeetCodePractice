@@ -66,37 +66,27 @@ if __name__ == '__main__':
     solution = Solution()
 
     # Test case 1
-    print("Test 1:")
     chars = ['l', 'e', 'e', 't', 'c', 'o', 'd', 'e']
     result = solution.firstNonRepeatingChar(chars)
-    print(f"Input: chars = {chars}")
-    print(f"Output: '{result}'")
-    print(f"Expected: 'l'")
-    print()
+    print(f"Test 1: {chars} -> '{result}' (expected 'l')")
+    assert result == 'l', f"Got: {result!r}"
 
-    # Test case 2
-    print("Test 2:")
+    # Test case 2: every character repeats
     chars = ['a', 'a', 'b', 'b']
     result = solution.firstNonRepeatingChar(chars)
-    print(f"Input: chars = {chars}")
-    print(f"Output: '{result}'")
-    print(f"Expected: ''")
-    print()
+    print(f"Test 2: {chars} -> '{result}' (expected '')")
+    assert result == '', f"Got: {result!r}"
 
     # Test case 3
-    print("Test 3:")
     chars = ['a', 'b', 'c', 'a', 'b']
     result = solution.firstNonRepeatingChar(chars)
-    print(f"Input: chars = {chars}")
-    print(f"Output: '{result}'")
-    print(f"Expected: 'c'")
-    print()
+    print(f"Test 3: {chars} -> '{result}' (expected 'c')")
+    assert result == 'c', f"Got: {result!r}"
 
-    # Test case 4
-    print("Test 4:")
+    # Test case 4: single character
     chars = ['z']
     result = solution.firstNonRepeatingChar(chars)
-    print(f"Input: chars = {chars}")
-    print(f"Output: '{result}'")
-    print(f"Expected: 'z'")
-    print()
+    print(f"Test 4: {chars} -> '{result}' (expected 'z')")
+    assert result == 'z', f"Got: {result!r}"
+
+    print("All tests passed!")

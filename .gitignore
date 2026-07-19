@@ -29,3 +29,6 @@ Thumbs.db
 
 # claude-mem auto-generated context indexes
 **/CLAUDE.md
+
+# Local experiment playgrounds
+scratch/

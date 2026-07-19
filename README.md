@@ -31,10 +31,10 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 > Fresh restart on 2026-07-12 — all solutions were reset to blank stubs for re-practice.
 > The first-pass log is archived below.
 
-**Total Problems Solved:** 1
+**Total Problems Solved:** 2
 
 ### Algorithm Problems
-- Easy: 1
+- Easy: 2
 - Medium: 0
 - Hard: 0
 
@@ -54,6 +54,7 @@ bun easy/020_best_time_to_buy_and_sell_stock.ts
 | # | Date | Problem | Difficulty | Source | Notes |
 |---|------|---------|------------|--------|-------|
 | 1 | 2026-07-12 | Contains Duplicate | Easy | LeetCode #217 | Hash set with early return (O(n) time, O(n) space) |
+| 2 | 2026-07-19 | Diagonal Difference | Easy | HackerRank | Single pass summing both diagonals by index (O(n) time, O(1) space) |
 
 ### First Pass — Archived Log (solutions since reset)
 

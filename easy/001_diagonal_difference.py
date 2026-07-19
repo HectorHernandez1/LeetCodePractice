@@ -2,7 +2,7 @@
 Problem: Diagonal Difference
 Source: HackerRank
 Difficulty: Easy
-Date: 2026-01-09
+Date: 2026-07-19
 
 Description:
 Given a square matrix, calculate the absolute difference between the sums of its diagonals.
@@ -31,8 +31,15 @@ def diagonalDifference(arr):
     Time Complexity: O(n) where n is the dimension of the matrix
     Space Complexity: O(1)
     """
-    pass
+    n = len(arr)
+    f = 0
+    b = 0
+    for i in range(n):
+        f += arr[i][i]
+        b += arr[i][n-i-1]
 
+    
+    return abs(f-b)
 
 # Test cases
 if __name__ == '__main__':
